@@ -1,0 +1,31 @@
+{% extends 'default.html' %}
+
+{% block title %}
+settings
+{% endblock %}
+
+{% block content %}
+<body>
+    <header class="header_wrapper">
+        <div class="header_title">
+            <h1>Skill factory app settings</h1>
+        </div>
+    </header>
+    <section class="settings_input">
+        <div class="settings_wrapper">
+            <form class="input_form" method="POST">
+                <input class="host parameter" name="host" type="text" placeholder="Eneter the host to parsing" >
+                <input class="frequency parameter" name="update_frequency" placeholder="Enter the update frequency" >
+                <input class="text parameter" name="text" placeholder="Enter the text to show in the channel" >
+                <button class="submit_settings button" type="submit">save</button>
+            </form>
+            <div class="button_wrapper">
+                <button class="submit_settings button" type="submit"><a href=reset>reset all</a></button>
+            </div>
+            <div class="button_wrapper">
+                <button class="submit_settings button" type="submit"><a href=workspaces>Workspaces</a></button>
+            </div>
+        </div> 
+    </section>
+</body>
+{% endblock %}

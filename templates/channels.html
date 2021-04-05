@@ -1,0 +1,28 @@
+{% extends 'default.html' %}
+
+{% block title %}
+workspaces
+{% endblock %}
+
+{% block content %}
+<body>
+    <header class="header_wrapper">
+        <div class="header_title">
+            <h1>Skill factory app settings</h1>
+        </div>
+    </header>
+    <section class="settings_input">
+        <div class="workspaces_wrapper">
+            <form class="input_form" method="POST">
+                <input class="token parameter" name="token" type="text" placeholder="Enter the workspace token">
+                <input class="channel second" name="channel" type="text" placeholder="Enter the channel for your workspace">
+                <input class="tegs second" name="tegs" type="text" placeholder="Enter the tegs splitted by ' ">
+                <button class="submit_workspaces button" type="submit">Save</button>
+            </form>
+            <div class="button_wrapper">
+                <button class="main button" type="submit"><a href=main>main</a></button>
+            </div>
+        </div> 
+    </section>
+</body>
+{% endblock %}
